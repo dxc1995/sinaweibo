@@ -1,0 +1,87 @@
+@charset "utf-8";
+// less库
+@import "z.less";
+// 公共的变量
+@import "bl.less";
+
+.reset();
+
+body {
+	background: @body_bgc;
+}
+
+//header
+.header {
+	@h: 48px;
+	@border: 2px;
+    background: #ffffff;
+	border-top: @border solid @link_hover;
+	height: @h;
+	.logo {
+	  width: 83px;
+	  height: 31px;
+	  background: url(../imgs/logo.png) left top no-repeat;
+	  .fl();
+	  margin: 8px 30px 13px 0;
+	  a {
+	    display: block;
+	    height: 100%;
+	    text-indent: -99em;
+	  }
+	}
+	&_comWidth {
+	  width: 1240px; 
+	  .bc();
+	  .clearfix();
+	}
+    // search
+	.search {
+       .fl();
+       @w: 568px;
+       @search_h: 28px;
+       @input_w: 530px;
+       width: @w;
+       height: @search_h;
+       border: 1px solid #ccc;
+       background-color: #F2F2F5;
+       margin: (@h - @search_h - 2)/2 0;
+       &_input {
+          width: @input_w - 16px;
+          .fl();
+          height: @search_h;
+          line-height: @search_h~"\9";
+          padding: 0 8px;
+       }
+
+       &_btn {
+         width: 17px;
+         height: 16px;
+         background: url(../imgs/search.png) left top no-repeat;
+         margin-top: (@search_h - 17px) /2;
+         margin-right: 10px;
+         .fr();
+       }
+	}
+	&Nav {
+	   .fr();
+	   height: 22px;
+	   margin:(@h - 22px) / 2 0;
+	   .font-fm();
+	   .font-s12();
+	   li {
+	      .fl();
+	      margin-right: 29px;
+	   }
+	   a {
+	     height: 22px;
+	     line-height: 22px;
+	     .d-ib();
+	     color: @link_color;
+	     background: url(../imgs/fx.png) left center no-repeat;
+	     padding-left: 26px;
+	     &:hover {
+	       color:@link_hover;
+	     }
+	   }
+	}
+}

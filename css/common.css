@@ -1,0 +1,110 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+img {
+  border: none;
+}
+input,
+select,
+textarea {
+  outline: none;
+  border: none;
+  background: none;
+}
+textarea {
+  resize: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background: #99d6f3;
+}
+.header {
+  background: #ffffff;
+  border-top: 2px solid #fa7d3c;
+  height: 48px;
+}
+.header .logo {
+  width: 83px;
+  height: 31px;
+  background: url(../imgs/logo.png) left top no-repeat;
+  float: left;
+  display: inline;
+  margin: 8px 30px 13px 0;
+}
+.header .logo a {
+  display: block;
+  height: 100%;
+  text-indent: -99em;
+}
+.header_comWidth {
+  width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  *zoom: 1;
+}
+.header_comWidth:before,
+.header_comWidth:after {
+  display: table;
+  content: "";
+}
+.header_comWidth:after {
+  clear: both;
+}
+.header .search {
+  float: left;
+  display: inline;
+  width: 568px;
+  height: 28px;
+  border: 1px solid #ccc;
+  background-color: #F2F2F5;
+  margin: 9px 0;
+}
+.header .search_input {
+  width: 514px;
+  float: left;
+  display: inline;
+  height: 28px;
+  line-height: 28px \9;
+  padding: 0 8px;
+}
+.header .search_btn {
+  width: 17px;
+  height: 16px;
+  background: url(../imgs/search.png) left top no-repeat;
+  margin-top: 5.5px;
+  margin-right: 10px;
+  float: right;
+  display: inline;
+}
+.headerNav {
+  float: right;
+  display: inline;
+  height: 22px;
+  margin: 13px 0;
+  font-family: "Microsoft Yahei", "微软雅黑";
+  font-size: 12px;
+}
+.headerNav li {
+  float: left;
+  display: inline;
+  margin-right: 29px;
+}
+.headerNav a {
+  height: 22px;
+  line-height: 22px;
+  display: inline-block;
+  color: #333333;
+  background: url(../imgs/fx.png) left center no-repeat;
+  padding-left: 26px;
+}
+.headerNav a:hover {
+  color: #fa7d3c;
+}
