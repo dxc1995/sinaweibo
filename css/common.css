@@ -100,7 +100,6 @@ body {
 .headerNav a {
   height: 22px;
   line-height: 22px;
-  border: 3px solid #000;
   display: inline-block;
   color: #333333;
   background: url(../imgs/fx.png) left center no-repeat;
@@ -136,9 +135,8 @@ body {
   display: inline;
 }
 .leftArea_cont {
-  width: 144px;
+  width: 150px;
   height: 600px;
-  border: 3px solid blue;
   float: left;
   display: inline;
 }
@@ -157,7 +155,7 @@ body {
   height: 34px;
   line-height: 34px;
   display: inline-block;
-  padding-left: 15px;
+  text-indent: 15px;
 }
 .nav a:hover {
   background-color: #98CEE7;
@@ -295,4 +293,45 @@ body {
 }
 .releaseBox .u_btn_active {
   background: #FF8140;
+}
+.navigation {
+  height: 41px;
+  line-height: 41px;
+  margin-top: 10px;
+  background: #fff;
+}
+.navigation .navigation_tiem {
+  width: 60%;
+  height: 41px;
+  border: 1px solid blue;
+  float: left;
+  display: inline;
+}
+.navigation .navigation_tiem li {
+  display: inline-block;
+}
+.navigation .navigation_tiem .fontweight {
+  font-weight: bold;
+}
+.navigation .navigation_tiem a {
+  color: #000;
+  font-size: 12px;
+  padding: 0 7px;
+}
+.navigation .navigation_tiem a:hover {
+  color: #FF8140;
+}
+.navigation .search_people {
+  float: right;
+  display: inline;
+  margin-right: 10px;
+}
+.navigation .search_people .search_text {
+  padding: 0 5px;
+  height: 25px;
+  line-height: 25px;
+  border: 1px solid #ccc;
+}
+.navigation .search_people .search_text:hover {
+  border: 1px solid orange;
 }
