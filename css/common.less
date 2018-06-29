@@ -110,6 +110,7 @@ body {
 
 .leftArea_cont {
 	width: @l_cont_w;
+  height: 600px;
 	.fl();
 }
 
@@ -121,12 +122,13 @@ body {
 .nav {
 	.font-s12();
 	.font-fm();
-	line-height: 24px;
 	a {
+    width: 100%;
 	  color: #fff;
 	  height: 34px;
+    line-height: 34px;
 	  .d-ib();
-	  padding-left: 15px;
+    text-indent: 15px;
 	  &:hover {
 	    background-color: #98CEE7;
 	  }
@@ -150,6 +152,7 @@ body {
 	height: @h - @pt;
 	padding: @pt;
 	background-color: #fff;
+  border: 3px solid red;
 	.border-radius(2px);
 	.release_top {
 	   padding: 0 12px;
@@ -250,4 +253,45 @@ body {
     .u_btn_active {
       background: #FF8140;
     }
+}
+
+.navigation{
+　 height: 41px;
+   line-height: 41px;
+   margin-top: 10px;
+   background: #fff;
+  .navigation_tiem {
+     width: 60%;
+     height: 41px;
+
+     border: 1px solid blue;
+     .fl();
+     li {
+       display: inline-block;
+     }
+     .fontweight {
+       font-weight: bold;
+     }
+     a {
+      color: #000;
+      font-size: 12px;
+      padding: 0 7px;
+      &:hover {
+        color: #FF8140;
+      }
+     }
+  }
+  .search_people {
+     .fr();
+     margin-right: 10px;
+     .search_text {
+         padding: 0 5px;
+         height: 25px;
+         line-height: 25px;
+         border: 1px solid #ccc;
+         &:hover {
+           border: 1px solid orange;
+         }
+     }
+  }
 }
